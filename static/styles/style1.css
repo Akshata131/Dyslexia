@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    height: 97.3vh;
+    position: relative;
+    background-image:linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.85)) , url('result.png');
+    background-repeat: no-repeat;
+    color: white;
+    background-position: center;
+    background-size: cover; 
+}
+.container{
+text-align: center;
+margin-top: 100px;
+
+}
+@keyframes blink {
+    50%{
+        opacity: 0;
+    }
+}
+.container h3 a{
+    animation: blink 1s linear 
+    infinite;}
+
+.content a
+{
+display: inline-block;
+padding: 30px 50px;
+background: #fff;
+border-radius: 4px;
+text-decoration: none;
+margin-left: 550px;
+color: #000000;
+font-weight: 700;
+margin-top: 20px;
+box-shadow: 0 2px 5px rgba(0,0,0,.2);
+} 
+header{
+    padding: 10px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #ff0000;
+
+  } 

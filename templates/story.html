@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+/* .card_2{
+  margin-top: 7%;
+  height: auto;
+  width: auto;
+  padding: 10px;
+  box-shadow: 5px 5px 5px 5px  #bdbcb7;
+  border-radius: 80px !important;
+  text-align: left;
+  background-color: #28a745ad;
+} */
+
+.container{
+	width: 100%;
+  
+}
+.carousel{
+  border-radius: 5px !important;
+  background-color: #f0bcbc;
+  padding: 10px;
+}
+
+.wrap {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  width: 100px;
+  height: 45px;
+  font-family: "sans-serif";
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #17a2b8;
+  margin-left: 20px;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  }
+
+.button:hover {
+  background-color: #2EE59D;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+body
+{
+     background-color: #7393B3;
+     font-family: "Lucida Console", "Courier New", monospace;
+
+     
+}
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column img{
+    height: 96vh;
+    margin-left: 100px;
+    width: 90%;
+}
+.col-sm-6 p{
+    font-size: 18px;
+    font-family: "Times New Roman", Times, serif;
+}
+.col-sm-6 h1{
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 900;
+}
+.col-sm-6 h2{
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 900;
+}
+.carousel-control-prev,
+  .carousel-control-next {
+    height: 40px;
+    margin-top: 250px;
+    /* outline: black; */
+    /* background-size: 20px, 50px; */
+    /* border-radius: 20%; */
+    /* border: 5px solid white;  */
+    background-color: rgb(237, 63, 63);
+    
+  }
+
+    </style>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Story</title>
+  </head>
+  <body>
+    <h1 style="text-align: center; font-size: 80px; color: rgb(0, 0, 0); text-shadow: 5px 8px 8px rgba(25, 92, 228, 0.6);">Storyसफर</h1>
+    <audio id="a1">
+      <source src="./static/audio/The Crow and the Snake.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="a2">
+      <source src="./static/audio/Rabbits and the Elephants.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="a3">
+      <source src="./static/audio/The Bird and the Farmer.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="a4">
+      <source src="./static/audio/The Clever Fox and the Crow.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="a5">
+      <source src="./static/audio/The Crocodile and the Monkey.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="a6">
+      <source src="./static/audio/The Eagle and the Crow.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="a7">
+      <source src="./static/audio/The Deer and the Lion.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="a8">
+      <source src="./static/audio/The Foolish Frogs.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="a9">
+      <source src="./static/audio/The Peacock and the Crane.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="a10">
+      <source src="./static/audio/The Sparrow and the Monkey.mp3" type="audio/mpeg">
+    </audio>
+    <div id="carouselExampleControls" class="carousel slide words" data-ride="carousel" data-interval="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-sm-6">
+                    <h1>Title: The Crow and the Snakes. </h1>
+                    <p>Once, a crow was flying in the sky. He was feeling hungry and was in search of food. On his way, he saw that the snake was lying ill. He thought it too be dead and decided to eat it. But the snake was alive and had become stiff due to excessive cold. The crow held the snake tightly and he did not realize that the snake is trying to free himself. After some time, the snake bit the crow with his fangs and the bitten crow came down on the earth with it. The crow became furious and loosened his grip.</p>
+                    <p>The injured crow grew in anger and attacked the snake with his full vigor and Strength. The crow pierced the snake with his beak and then he fainted him on the ground. But the crow died due to poisonous bite of the snake. After few minutes the snake also died. This way the crow had killed his enemy before dying.</p>
+                    <p> <h2>Moral: It is truly said that sometimes enmity finishes itself.</h2></p>
+                    <div class="wrap">
+                        <button class="button" onclick="play1()">PLAY</button>
+                        <button class="button" onclick="pause1()">PAUSE</button>
+                        <button class="button" style="background-color: #000;"><a href="level_one" >HOME</a></button>
+                    </div>
+                </div>
+                
+                <div class="column">
+                        <img src="./static/images/st_cr_sn.jpg" alt="" >
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h1>Title: Rabbits and the Elephants. </h1>
+                        <p>Once upon a time, there lived a herd of elephants in a forest. There was a big lake in the middle of the forest where all the animals used to go and drink water. Once, there was no rain for the whole year and the lake dried. The elephants decided to leave this place and shift to another place there was lots of water. On the way thousands of rabbits got crushed under the heavy feet Of the elephants.</p>
+                        <p>Then the rabbits called up a meeting and the clever rabbit went to the elephant king and said "Moon God is angry with you, because you have crushed thousands of rabbits to death on the way to the lake. The king elephant replied "I want to seek pardon for our sins." The rabbit took him to the moon God. There the elephant saw the reflected image of the moon in the still water. He thought the moon god was really angry thus left the place forever.</p>
+                        <p> <h2> Moral: Wit can win over might.</h2></p>
+                        <div class="wrap">
+                            <button class="button" onclick="play2()">PLAY</button>
+                            <button class="button" onclick="pause2()">PAUSE</button>
+                            <button class="button" style="background-color: #000;"><a href="level_one" >HOME</a></button>
+                        </div>
+                      </div>
+                        <div class="column">
+                            <img src="./static/images/st_ra_el.jpeg" alt="" >
+                        </div>
+                  </div>
+                </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h1>Title: The Bird and the Farmer. </h1>
+                        <p>In a faraway land, a farmer lived with his family on the edge of a big field. He owned a bird whom he greatly loved, One day, the farmer came to know that his bird daily invites a group of other birds to his field for eating crops. He got very angry and thought of a plan. He laid a net in the field to catch the birds. All the birds as usual happily landed on the field. As soon as they began to eat the grains, they got trapped in that huge net.</p>
+                        <p>The farmer saw all the birds and also noticed that his own bird was also amongst them. He grew furious and said. "You foolish bird, you cheated me...I will not leave you." After saying this, the farmer killed all the birds including his own dear bird.</p>
+                        <p> <h2>Moral: Always avoid bad comapny.</h2></p>
+                        <div class="wrap">
+                            <button class="button" onclick="play3()">PLAY</button>
+                            <button class="button" onclick="pause3()">PAUSE</button>
+                            <button class="button" style="background-color: #000;"><a href="level_one" >HOME</a></button>
+                        </div>
+                    </div>
+                        <div class="column">
+                            <img src="./static/images/st_bi_fa.jpeg" alt="" >
+                        </div>
+                    
+                  </div>
+                </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h1>Title: The Clever Fox and the Crow. </h1>
+                        <p>One day, a fox saw a crow fly Off with a piece of roti in his beak and sitting on a branch of a tree. A fox was very hungry and saw the crow holding the piece of roti in his beak. She thought of taking that food from the crow. </p>
+                        <p>So, she looked at the crow and said sweetly "How well you look today. Let me hear a song from you." "You must have a fine sweet voice" the fox flattered the crow. The crow was a vain creature and felt very pleased at receiving such high praise. The crow felt proud and lifting up his head began to caw loudly. But the moment he opened his mouth, the piece of roti fell to the ground and was snapped by master fox. "That will do" the fox said. "That was all I wanted" she grinned and quickly picked it up and ran away as fast as she could.</p>
+                        <p> <h2>Moral: Flatterers are not to be trusted.</h2></p>
+                        <div class="wrap">
+                            <button class="button" onclick="play4()">PLAY</button>
+                            <button class="button" onclick="pause4()">PAUSE</button>
+                            <button class="button" style="background-color: #000;"><a href="level_one" >HOME</a></button>
+                        </div>
+                    </div>
+                        <div class="column">
+                            <img src="./static/images/st_cr_fo.jpeg" alt="" >
+                        </div>
+                
+                  </div>
+                </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h1>Title: The Crocodile and the Monkey. </h1>
+                        <p> Once, the crocodile and the monkey were good friends. The monkey offered sweet tangy fruits to the crocodile. The crocodile thanked him and took some Of the fruits home for his wife. His wife loved the fruits and said "If the fruits he gives are so sweet, how sweet must be his heart!" "I must eat it!" she said.</p>
+                        <p>Next day, the crocodile said to the monkey "My wife and I invite you to our home for dinner." On the way to his house, the crocodile revealed his real intentions to the monkey. Then monkey replied, "Oh dear! why didn't you tell me earlier?" My heart is in the tree" he said and asked him to go back to the tree. The foolish crocodile swam back to the tree and the monkey quickly climbed up the tree and saved his life.</p>
+                        <p> <h2>Moral: At times, presence of mind pays well.</h2></p>
+                        <div class="wrap">
+                            <button class="button" onclick="play5()">PLAY</button>
+                            <button class="button" onclick="pause5()">PAUSE</button>
+                            <button class="button" style="background-color: #000;"><a href="level_one" >HOME</a></button>
+                        </div>
+                    </div>
+                  
+                        <div class="column">
+                            <img src="./static/images/st_cr_mo.jpeg" alt="" >
+                        </div>
+    
+                    <div class="col-sm-1"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-sm-6">
+                          <h1>Title: The Eagle and the Crow. </h1>
+                          <p>Once there lived an eagle on a high steep hill. On a banyan tree nearby, lived a crow. The crow was Lazy and was on look out for an easy meal. There was a cave beside the tree where a group of sheep lived. Whenever a sheep alighted from the cave, the eagle would sweep down on him and make a fine meal out of him. The crow watched this from the tree. Immediately his mouth started watering.</p>
+                          <p>He decided to imitate the eagle and accordingly flew to a great height. He saw a sheep coming out of the cave and he swooped down to pounce on him. However,he was a mere crow and not a mighty eagle. The sheep hid behind a huge rock and the crow dashed onto the rock and was killed.</p>
+                          <p> <h2>Moral: Never try and copy another.</h2></p>
+                          <div class="wrap">
+                              <button class="button" onclick="play6()">PLAY</button>
+                              <button class="button" onclick="pause6()">PAUSE</button>
+                              <button class="button" style="background-color: #000;"><a href="level_one" >HOME</a></button>
+                          </div>level_one
+                        </div>
+                          <div class="column">
+                              <img src="./static/images/st_ea_cr.jpeg" alt="" >
+                          </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h1>Title: The Deer and the Lion. </h1>
+                            <p>Once a time, there lived a lion in the forest that loved his subjects and applied his wit to solve the problem of others. Suddenly ,his attitude changed and whenever he felt hunger he eats one of his subjects and ate him.</p>
+                            <p>One day all the animals gathered at a place to plan and get rid of the lion. "I shall be able to kill him with my physical powers, said the confident deer." The next day, the deer went to the lions den and started grazing green grass there. The lion saw the deer and came out roaring. He started chasing him. The deer also started running at a very high speed and reached near a river. There was a small wooden like bridge passing on the river. The deer jumped very cautiously over the bridge and crossed the river. But as soon as the lion tried to cross the bridge, it lost its and fell into the river and drowned.</p>
+                            <p> <h2>Moral: Presence of mind counts.</h2></p>
+                            <div class="wrap">
+                                <button class="button" onclick="play7()">PLAY</button>
+                                <button class="button" onclick="pause7()">PAUSE</button>
+                                <button class="button" style="background-color: #000;"><a href="level_one" >HOME</a></button>
+                            </div>
+                          </div>
+                            <div class="column">
+                                <img src="./static/images/st_de_li.jpeg" alt="" >
+                            </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="row">
+                          <div class="col-sm-6">
+                              <h1>Title: The Foolish Frogs. </h1>
+                              <p>Once, there was a little pond outside a village.Many frogs lived in that pond, A big snake used to come to the pond evervday. He ate a lot of frogs. But he wanted to eat still more, so he made a plan to fool the frogs. One day he started crying near the pond.</p>
+                              <p>A frog came to the surface of the pond and asked, "Dear, snake, why are you crying?" The snake replied, "An astrologer has told me that this lake will go dry this season. So I am leaving this place and I would like you all to come with me, otherwise you all would be dead." All the frogs got scared and came out and started moving with the snake. In the way the snake ate frogs one by one and felt very happy.</p>
+                              <p> <h2>Moral: Never trust an enemy.</h2></p>
+                              <div class="wrap">
+                                  <button class="button" onclick="play8()">PLAY</button>
+                                  <button class="button" onclick="pause8()">PAUSE</button>
+                                  <button class="button" style="background-color: #000;"><a href="level_one" >HOME</a></button>
+                              </div>
+                            </div>
+                              <div class="column">
+                                  <img src="./static/images/st_fo_fr.jpeg" alt="" >
+                              </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h1>Title: The Peacock and the Crane. </h1>
+                                <p>Once there was a very beautiful peacock. Everyday, he would go to the lake and look at his own reflection in the water and admire himself. One day a peacock met the crane. The peacock taunted the crane for the dullness of her plumage.</p>
+                                <p>And said, "I feel so sorry for you...You have such dull feathers...Look at the fine colours of my feathers." The peacock would often say to the crane showing him his own beauty. "Look at my golden and purple plumage..." "Well! Replied the crane, your looks are better than mine."" But whereas I can fly high up into the sky, all you can do is strut about on the ground". Suddenly, a hunter came in the jungle. The crane flew high up into the blue sky whereas the peacock was left stranded on the ground.The hunter easily caught the peacock and thus killed him for his beautiful feathers.</p>
+                                <p> <h2>Moral: Never find fault with others.</h2></p>
+                                <div class="wrap">
+                                    <button class="button" onclick="play9()">PLAY</button>
+                                    <button class="button" onclick="pause9()">PAUSE</button>
+                                    <button class="button" style="background-color: #000;"><a href="level_one" >HOME</a></button>
+                                </div>
+                              </div>
+                                <div class="column">
+                                    <img src="./static/images/st_pe_cr.jpeg" alt="" >
+                                </div>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <div class="row">
+                              <div class="col-sm-6">
+                                  <h1>Title: The Sparrow and the Monkey.</h1>
+                                  <p>One day, a monkey was completely drenched in the rain and was shivering from cold. He went scurrying a tree for cover.</p>
+                                  <p>Seeing the condition of the monkey, a female sparrow started laughing at the monkey. She said, "You are such a big fellow and still you don't have any shelter of your own,"She advised the monkey to make a house of his own. After hearing this the monkey got went up to the tree to kilL the sparrow. He climbed up the tree and destroyed the sparrow's nest. The sparrow full of grief said to the monkey "You are a fool who does not understand the essence of others advice. Fools always ignore valuable advice."</p>
+                                  <p> <h2>MMoral: Always accept the valuable advice of others.</h2></p>
+                                  <div class="wrap">
+                                      <button class="button" onclick="play10()">PLAY</button>
+                                      <button class="button" onclick="pause10()">PAUSE</button>
+                                      <button class="button" style="background-color: #000;"><a href="level_one" >HOME</a></button>
+                                  </div>
+                                </div>
+                                  <div class="column">
+                                      <img src="./static/images/st_sp_mo.jpeg" alt="" >
+                                  </div>
+                            </div>
+                          </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+            
+            
+            </div>
+         <div class="col-sm-2"></div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script>
+      var x1 = document.getElementById("a1"); 
+      var x2 = document.getElementById("a2");
+      var x3 = document.getElementById("a3");
+      var x4 = document.getElementById("a4");
+      var x5 = document.getElementById("a5");
+      var x6 = document.getElementById("a6");
+      var x7 = document.getElementById("a7");
+      var x8 = document.getElementById("a8");
+      var x9 = document.getElementById("a9");
+      var x10 = document.getElementById("a10");
+
+      function play1() { 
+        x1.play(); 
+      }  
+
+      function play2() { 
+        x2.play(); 
+      }
+
+      function play3() { 
+        x3.play(); 
+      }
+
+      function play4() { 
+        x4.play(); 
+      }
+
+      function play5() { 
+        x5.play(); 
+      }
+
+      function play6() { 
+        x6.play() 
+      }
+
+      function play7() { 
+        x7.play(); 
+      }
+
+      function play8() { 
+        x8.play(); 
+      }
+
+      function play9() { 
+        x9.play(); 
+      }
+
+      function play10() { 
+        x10.play(); 
+      }
+
+      function pause1() {
+        x1.pause();
+      }
+      function pause2() {
+        x2.pause();
+      }
+      function pause3() {
+        x3.pause();
+      }
+      function pause4() {
+        x4.pause();
+      }
+      function pause5() {
+        x5.pause();
+      }
+      function pause6() {
+        x6.pause();
+      }
+      function pause7() {
+        x7.pause();
+      }
+      function pause8() {
+        x8.pause();
+      }
+      function pause9() {
+        x9.pause();
+      }
+      function pause10() {
+        x10.pause();
+      }
+    
+
+    </script>
+  </body>
+</html>

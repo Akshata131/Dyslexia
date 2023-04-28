@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <!-- Add Font Awesome CDN link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Add custom CSS -->
+  <style>
+    body {
+      background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)) ,url('static/images/Data_security_14.jpg');
+      background-repeat: no-repeat;
+      background-size: cover; 
+      font-family: Arial, sans-serif;
+      height: 77.5vh;
+    }
+    .login-box {
+      margin: 10% auto;
+      max-width: 400px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0,0,0,.3);
+    }
+    .login-box h2 {
+      margin-bottom: 20px;
+      text-align: center;
+      color: #555;
+    }
+    .login-box label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #555;
+    }
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-sizing: border-box;
+    }
+    .login-box button[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    .login-box button[type="submit"]:hover {
+      background-color: #0069d9;
+    }
+    .popup {
+            position: fixed;
+            bottom: 520px;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            z-index: 9999;
+        }
+        
+        .error {
+            background-color: #ff0000;
+        }
+
+  </style>
+</head>
+<body>
+  {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="popup {{ category }}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+  <div class="login-box">
+    <h2><i class="fa fa-user-circle"></i> Login</h2>
+    <form method="post" action="{{ url_for('login') }}">
+      <label for="username"><i class="fas fa-user"></i> Username:</label>
+      <input type="text" id="username" name="username" required><br>
+      <label for="password"><i class="fas fa-lock"></i>  Password:</label>
+      <input type="password" id="password" name="password" required>
+      <button type="submit" value="Login">Login <i class="fas fa-sign-in-alt"></i></button>
+    </form>
+    <!-- <form method="post" action="{{ url_for('login') }}">
+      <label for="username"><i class="fas fa-user"></i> Username</label>
+      <input type="text" id="username" name="username" required>
+      <label for="password"><i class="fas fa-lock"></i> Password</label>
+      <input type="password" id="password" name="password" required>
+      <button type="submit"><i class="fas fa-sign-in-alt"></i> Login</button>
+    </form> -->
+  </div>
+
+
+</body>
+</html> 

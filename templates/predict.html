@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dyslexia Identification</title>
+	<style>
+		
+		body {
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			/* background-color: #f2f2f2; */
+			/* padding: 20px;
+            width: 70%;
+            background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)) ,url('predict.jpg');
+            background-size: 1300px 900px;
+            background-repeat: no-repeat; */
+			/* width: 100%;
+			height: 140vh; */
+			background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)) ,url('static/images/predict.jpg');
+			/* background-position: center; */
+			background-size: cover; 
+	
+		}
+		h1 {
+			font-size: 24px;
+			font-weight: bold;
+			margin-bottom: 20px;
+            margin-left: 30px;
+            text-align: center;
+            color: white;
+			
+		}
+		form {
+			background-color: white;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-left: 400px;
+			width: 35%;
+		}
+		label {
+			display: block;
+			margin-bottom: 10px;
+            margin-left: 10px;
+		}
+		input[type="text"] {
+			display: block;
+			width: 80%;
+			padding: 10px;
+			font-size: 14px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			margin-bottom: 5px;
+            margin-left: 35px;
+		}
+		button {
+			background-color: #4CAF50;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			padding: 10px 20px;
+			font-size: 16px;
+			cursor: pointer;
+            margin-left: 170px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Dyslexia Identification</h1>
+    <!-- <form action="/predict" method="POST">
+        <label for="lang_vocab">Lang_vocab:</label>
+        <input type="text" id="lang_vocab" name="lang_vocab" required><br>
+
+        <label for="memory">Memory:</label>
+        <input type="text" id="memory" name="memory" required><br>
+
+        <label for="speed">Speed:</label>
+        <input type="text" id="speed" name="speed" required><br>
+
+        <label for="visual">Visual:</label>
+        <input type="text" id="visual" name="visual" required><br>
+
+        <label for="audio">Audio:</label>
+        <input type="text" id="audio" name="audio" required><br>
+
+        <label for="survey">Survey:</label>
+        <input type="text" id="survey" name="survey" required><br>
+
+		<button type="submit">Predict</button>
+		<div class="loader" style="display:none;"></div>
+		<!-- <h1 class="output" id="txt">{{output}}</h1>  -->
+	
+	<!-- </div>
+	</form>  --> 
+	<form method="POST" action="/predict">
+		<label for="lang_vocab">Language_vocabulary :</label>
+		<input type="text" id="lang_vocab" name="lang_vocab" required><br>
+	  
+		<label for="memory">Memory :</label>
+		<input type="text" id="memory" name="memory" required><br>
+	  
+		<label for="speed">Speed :</label>
+		<input type="text" id="speed" name="speed" required><br>
+	  
+		<label for="visual">Visual_discrimination :</label>
+		<input type="text" id="visual" name="visual" required><br>
+	  
+		<label for="audio">Audio_discrimination :</label>
+		<input type="text" id="audio" name="audio" required><br>
+	  
+		<label for="survey">Survey_Score :</label>
+		<input type="text" id="survey" name="survey" required><br>
+	  
+		<button type="submit">Predict</button>
+	  </form>
+	  
+</body>
+</html>

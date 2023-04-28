@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Unscramble the word</title>
+    <style>
+      .image-container {
+        text-align: center;
+        color: white;
+      }
+      form{
+        margin: 30px;
+      }
+      body {
+      background-image:linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.70)) ,url('static/images/shuffle.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      height: 95vh;
+    }
+    form .btn[type="submit"] {
+      width: 10%;
+      padding: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    form .btn[type="submit"]:hover {
+      background-color: #0069d9;
+    }
+    form input[type="text"]{
+      width: 20%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-sizing: border-box;
+    }
+    
+    </style>
+  </head>
+  <body>
+    <div class="image-container">
+      <h1 >Unscramble the word</h1>
+      <p>Unscramble the word below:</p>
+      <p>{{ shuffled_word }}</p>
+      <img src="{{ image }}" alt="Image">
+      <form method="post" action="/check_word">
+        <input type="text" name="guess" placeholder="Your guess">
+        <input type="hidden" name="word" value="{{ word }}">
+        <input type="hidden" name="shuffled_word" value="{{ shuffled_word }}">
+        <input type="hidden" name="image" value="{{ image }}">
+        <button type="submit" class="btn">Submit</button>
+      </form>
+   </div>
+  </body>
+</html>

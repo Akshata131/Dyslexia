@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+body{
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)) ,url('static/images/1.png');
+}
+        
+.card_2{
+  margin-top: 20%;
+  height: auto;
+  width: auto;
+  /* padding: 10px;
+  box-shadow: 5px 5px 5px 5px  #bdbcb7;
+  border-radius: 80px !important;
+  text-align: left;
+  background-color: #28a745ad; */
+}
+
+.container{
+	width: 100%;
+}
+
+.imagecenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
+}
+
+.carousel{
+  border-radius: 10px !important;
+  background-color: #efb3b3;
+  padding: 30px;
+}
+
+.word1, .word2{
+	text-align: center;
+}
+
+.wrap {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  width: 150px;
+  height: 45px;
+  font-family: "sans-serif";
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #17a2b8;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  }
+
+.button:hover {
+  background-color: #2EE59D;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.card_3{
+  margin-top: 50%; 
+  height: auto;
+  width: 100%;
+  padding: 10px;
+  /* box-shadow: 5px 5px 5px 5px  #bdbcb7; */
+  text-align: left;
+  background-color: #233569;
+}
+
+.instructions{
+  background-color: #686e9a;
+  padding: 20px;
+  color: white;
+  font-size: 80%;
+}
+
+    </style>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Audio</title>
+  </head>
+  <body>
+    <audio id="a1">
+      <source src="./static/audio/Ambition.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="a2">
+      <source src="./static/audio/Breakfast.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="a3">
+      <source src="./static/audio/Bridge.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="a4">
+      <source src="./static/audio/Celebration.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="a5">
+      <source src="./static/audio/Computer.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="a6">
+      <source src="./static/audio/onductor.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="a7">
+      <source src="./static/audio/Cuisine.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="a8">
+      <source src="./static/audio/Eagle.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="a9">
+      <source src="./static/audio/Earth.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="a10">
+      <source src="./static/audio/Forest.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="a11">
+      <source src="./static/audio/Friend.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="a12">
+      <source src="./static/audio/Hospital.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="a13">
+      <source src="./static/audio/Ice Cream.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="a14">
+      <source src="./static/audio/Octopus.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="a15">
+      <source src="./static/audio/Truth.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="a16">
+      <source src="./static/audio/Entertainment.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="a17">
+      <source src="./static/audio/Honest.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="a18">
+      <source src="./static/audio/India.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="a19">
+      <source src="./static/audio/Request.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="a20">
+      <source src="./static/audio/Speech.mp3" type="audio/mpeg">
+    </audio>
+    <div class="container">
+        <h1 style="text-align: center; font-size: 80px; color: rgb(247, 247, 247); text-shadow: 5px 8px 8px rgba(25, 92, 228, 0.6);">शब्दVision</h1>
+      <!-- <img src="images\1.png" alt="WORDOPEDIA" class="imagecenter" style="width:80%; height: 170px; "> -->
+      <div class="row">
+        <div class="col-sm-2">
+          <h3 style="font-size: 100%; text-align: center; color: white; margin-bottom: -20px;"><b>Instructions</b></h3>
+          <div class="card_3">
+
+            <div class="instructions">
+              
+              
+              <p>Press the play button and listen carefully to the pronunciation.</p>
+              <p>Figure out which part of the words sound similar.</p>
+              <p>Try to note down the different words and mark the parts which sound the same.</p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-8">
+          <div class="card_2">
+            <div id="carouselExampleControls" class="carousel slide words" data-ride="carousel" data-interval="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-5">
+                      <h3 class="word1">Ambition</h3>
+                      <p><b>Meaning: </b>a strong desire to do or achieve something.</p>
+                      <div class="wrap">
+                        <button class="button" onclick="play1()">PLAY</button>
+                      </div>
+                    </div>
+                    <div class="col-sm-5">
+                      <h3 class="word2">Breakfast</h3>
+                      <p><b>Meaning: </b>Breakfast is the first meal of the day usually eaten in the morning.</p>
+                      <div class="wrap">
+                        <button class="button" onclick="play2()">PLAY</button>
+                      </div>
+                    </div>
+                    <div class="col-sm-1"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-5">
+                      <h3 class="word1">Bridge</h3>
+                      <p><b>Meaning: </b>A structure built over a river or a railroad so people can cross.</p>
+                      <div class="wrap">
+                        <button class="button" onclick="play3()">PLAY</button>
+                      </div>
+                    </div>
+                    <div class="col-sm-5">
+                      <h3 class="word2">Celebration</h3>
+                      <p><b>Meaning: </b>A social gathering or enjoyable activity held to celebrate something.</p>
+                      <div class="wrap">
+                        <button class="button" onclick="play4()">PLAY</button>
+                      </div>
+                    </div>
+                    <div class="col-sm-1"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-5">
+                      <h3 class="word1">Computer</h3>
+                      <p><b>Meaning: </b>A computer is an electronic machine which is used to do different kinds of work.</p>
+                      <div class="wrap">
+                        <button class="button" onclick="play5()">PLAY</button>
+                      </div>
+                    </div>
+                    <div class="col-sm-5">
+                      <h3 class="word2">Conductor</h3>
+                      <p><b>Meaning: </b>The person who has charge of the passengers and collects fares on a bus.</p>
+                      <div class="wrap">
+                        <button class="button" onclick="play6()">PLAY</button>
+                      </div>
+                    </div>
+                    <div class="col-sm-1"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-5">
+                      <h3 class="word1">Cuisine</h3>
+                      <p><b>Meaning: </b>Cuisine is a type of food that is cooked in a specific way based on a culture's ingredients, region, and traditions.</p>
+                      <div class="wrap">
+                        <button class="button" onclick="play7()">PLAY</button>
+                      </div>
+                    </div>
+                    <div class="col-sm-5">
+                      <h3 class="word2">Eagle</h3>
+                      <p><b>Meaning: </b>Eagles are large birds of prey, meaning that they hunt and eat animals for food.</p>
+                      <div class="wrap">
+                        <button class="button" onclick="play8()">PLAY</button>
+                      </div>
+                    </div>
+                    <div class="col-sm-1"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-5">
+                      <h3 class="word1">Earth</h3>
+                      <p><b>Meaning: </b>The world; the planet on which we live.</p>
+                      <div class="wrap">
+                        <button class="button" onclick="play9()">PLAY</button>
+                      </div>
+                    </div>
+                    <div class="col-sm-5">
+                      <h3 class="word2">Forest</h3>
+                      <p><b>Meaning: </b>A large area of land covered with trees.</p>
+                      <div class="wrap">
+                        <button class="button" onclick="play10()">PLAY</button>
+                      </div>
+                    </div>
+                    <div class="col-sm-1"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-5">
+                      <h3 class="word1">Friend</h3>
+                      <p><b>Meaning: </b>Friends are people that you can have fun with.</p>
+                      <div class="wrap">
+                        <button class="button" onclick="play11()">PLAY</button>
+                      </div>
+                    </div>
+                    <div class="col-sm-5">
+                      <h3 class="word2">Hospital</h3>
+                      <p><b>Meaning: </b>A place where ill or injured people are treated.</p>
+                      <div class="wrap">
+                        <button class="button" onclick="play12()">PLAY</button>
+                      </div>
+                    </div>
+                    <div class="col-sm-1"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-5">
+                      <h3 class="word1">Ice Cream</h3>
+                      <p><b>Meaning: </b>A frozen sweet food that is made from cream.</p>
+                      <div class="wrap">
+                        <button class="button" onclick="play13()">PLAY</button>
+                      </div>
+                    </div>
+                    <div class="col-sm-5">
+                      <h3 class="word2">Octopus</h3>
+                      <p><b>Meaning: </b>A sea animal with a soft body and eight long arms (tentacles).</p>
+                      <div class="wrap">
+                        <button class="button" onclick="play14()">PLAY</button>
+                      </div>
+                    </div>
+                    <div class="col-sm-1"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-5">
+                      <h3 class="word1">Truth</h3>
+                      <p><b>Meaning: </b>The state or quality of being true.</p>
+                      <div class="wrap">
+                        <button class="button" onclick="play15()">PLAY</button>
+                      </div>
+                    </div>
+                    <div class="col-sm-5">
+                      <h3 class="word2">Entertainment</h3>
+                      <p><b>Meaning: </b>Entertainment is performances of plays and activities that give people pleasure.</p>
+                      <div class="wrap">
+                        <button class="button" onclick="play16()">PLAY</button>
+                      </div>
+                    </div>
+                    <div class="col-sm-1"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-5">
+                      <h3 class="word1">Honest</h3>
+                      <p><b>Meaning: </b>Truthful; fair; not lying or cheating</p>
+                      <div class="wrap">
+                        <button class="button" onclick="play17()">PLAY</button>
+                      </div>
+                    </div>
+                    <div class="col-sm-5">
+                      <h3 class="word2">India</h3>
+                      <p><b>Meaning: </b>India is our country, part of the continent of Asia</p>
+                      <div class="wrap">
+                        <button class="button" onclick="play18()">PLAY</button>
+                      </div>
+                    </div>
+                    <div class="col-sm-1"></div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-5">
+                      <h3 class="word1">Request</h3>
+                      <p><b>Meaning: </b>Used for asking someone if they want anything.</p>
+                      <div class="wrap">
+                        <button class="button" onclick="play19()">PLAY</button>
+                      </div>
+                    </div>
+                    <div class="col-sm-5">
+                      <h3 class="word2">Speech</h3>
+                      <p><b>Meaning: </b>The communication or expression of thoughts in spoken words.</p>
+                      <div class="wrap">
+                        <button class="button" onclick="play20()">PLAY</button>
+                      </div>
+                    </div>
+                    <div class="col-sm-1"></div>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-2"></div>
+      </div>
+    </div>
+        
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script>
+      var x1 = document.getElementById("a1"); 
+      var x2 = document.getElementById("a2");
+      var x3 = document.getElementById("a3");
+      var x4 = document.getElementById("a4");
+      var x5 = document.getElementById("a5");
+      var x6 = document.getElementById("a6");
+      var x7 = document.getElementById("a7");
+      var x8 = document.getElementById("a8");
+      var x9 = document.getElementById("a9");
+      var x10 = document.getElementById("a10");
+      var x11 = document.getElementById("a11");
+      var x12 = document.getElementById("a12");
+      var x13 = document.getElementById("a13");
+      var x14 = document.getElementById("a14");
+      var x15 = document.getElementById("a15");
+      var x16 = document.getElementById("a16");
+      var x17 = document.getElementById("a17");
+      var x18 = document.getElementById("a18");
+      var x19 = document.getElementById("a19");
+      var x20 = document.getElementById("a20");
+
+      function play1() { 
+        x1.play(); 
+      }  
+
+      function play2() { 
+        x2.play(); 
+      }
+
+      function play3() { 
+        x3.play(); 
+      }
+
+      function play4() { 
+        x4.play(); 
+      }
+
+      function play5() { 
+        x5.play(); 
+      }
+
+      function play6() { 
+        x6.play() 
+      }
+
+      function play7() { 
+        x7.play(); 
+      }
+
+      function play8() { 
+        x8.play(); 
+      }
+
+      function play9() { 
+        x9.play(); 
+      }
+
+      function play10() { 
+        x10.play(); 
+      }
+
+      function play11() { 
+        x11.play(); 
+      }
+
+      function play12() { 
+        x12.play(); 
+      }
+
+      function play13() { 
+        x13.play(); 
+      }
+
+      function play14() { 
+        x14.play(); 
+      }
+
+      function play15() { 
+        x15.play(); 
+      }
+
+      function play16() { 
+        x16.play(); 
+      }
+
+      function play17() { 
+        x17.play(); 
+      }
+
+      function play18() { 
+        x18.play(); 
+      }
+
+      function play19() { 
+        x19.play(); 
+      }
+
+      function play20() { 
+        x20.play(); 
+      }
+    </script>
+  </body>
+</html>
